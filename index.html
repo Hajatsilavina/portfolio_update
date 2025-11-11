@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <title>PROJET FINAL</title>
+    <style>
+        #liste_tete ul li p {
+    font-size: 1rem;
+    color: white;
+    display: none;
+    position: absolute;
+    transform: translateY(5px);
+    transition: 0.3s ease-in-out;
+    margin: 0;
+} 
+
+    #liste_tete ul li img:hover + p {
+    display: block;
+    transform: translateY(0);
+}
+    </style>
 </head>
+
 <body style="width: 100%; max-width: 100%; overflow-x: hidden;">
     <header>
         <div id="nom_prenom">
@@ -15,31 +32,31 @@
             <ul>
                 <li>
                     <a style="color: #d77d33;" href="#" class="all1">
-                        <img src="./accueil.png">
+                        <img src="./accueil.png" width="30px" height="30px">
                         <p>Accueil</p>
                     </a>
                 </li>
                 <li>
                     <a href="#propos" style="behavior: 'smooth';">
-                        <img src="./propos.png">
+                        <img src="./propos.png" width="30px" height="30px">
                         <p>A propos</p>
                     </a>
                 </li>
                 <li>
                     <a href="#projet">
-                        <img src="./projet.png">
+                        <img src="./projet.png" width="30px" height="30px">
                         <p>Projets</p>
                     </a>
                 </li>
                 <li>
                     <a href="#competence">
-                        <img src="./skills.png">
+                        <img src="./skills.png" width="30px" height="30px">
                         <p>Compétences</p>
                     </a>
                 </li>
                 <li>
                     <a href="#contact">
-                        <img src="./contact.png">
+                        <img src="./contact.png" width="30px" height="30px">
                         <p>Contact</p>
                     </a>
                 </li>
