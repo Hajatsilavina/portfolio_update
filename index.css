@@ -1,0 +1,1018 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(./PoppinsMedium-1JPv.otf);
+}
+
+html {
+    font-size: 10px;     /*vraiment vraiment vraiment important pour la responsivité */
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    height: 15rem;
+}
+
+header div{
+    margin: auto;
+}
+
+#nom_prenom {
+    margin-left: 20rem;
+}
+
+.tsila {
+    color: #d77d33;
+}
+
+.nom_prenom {
+    margin: 0;
+    font-size: 2.4rem;
+    height: 3.6rem;
+}
+
+#liste_tete {
+    margin-right: 2rem;
+}
+
+#liste_tete ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#liste_tete ul li {
+    margin: 0;
+    padding: 4rem;
+}
+
+#liste_tete ul li a {
+    text-decoration: none;
+    font-family: 'poppins';
+    color: white;
+    font-size: 1.5rem;
+}
+
+#accueil {
+    height: 61.5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+
+#accueil div {
+    margin-top: 15rem;
+}
+
+#accueil #intro {
+    text-align: center;
+}
+
+#accueil #intro p {
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'poppins'; 
+    width: 84.3rem;
+    height: 12rem;  
+    
+}
+
+#accueil #intro button {
+    color: white;
+    background-color: #d77d33;
+    width: 29.1rem;
+    height: 6.572rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 2rem;
+    margin-top: 15rem;
+    transition: ease-in-out .1s;
+}
+
+#accueil #intro button:hover {
+    border: none;
+    width: 30.2rem;
+    height: 7rem;
+}
+
+#accueil img {
+    width: 39.7rem; 
+    height: 36.1rem;
+}
+
+#propos {
+    height: 61.5rem;
+    background-color: rgb(220, 215, 215);
+}
+
+#propos #propos2 {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 5rem;
+}
+
+#propos h2 {
+    width: 11rem;
+    height: 3.765rem;
+    padding: 3rem 0 3rem 90rem;
+    margin: 0;
+    font-family: 'poppins';
+    font-size: 2.4rem;
+    color: #d77d33;
+}
+
+#propos #intro p {
+    width: 64.7rem;
+    height: 5.648rem;
+    margin-left: 6.7rem;
+    font-family: 'poppins';
+    font-size: 1.8rem;
+    margin-top: -4rem;
+}
+
+#propos #intro a {
+
+    position: relative;
+    top: 35rem;
+    height: 6.263rem;
+    margin-left: 6.7rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #d77d33;
+    transition: ease-in-out .1s;
+    text-decoration: none;
+    font-family: 'poppins';
+    padding: 2.5rem;
+    font-size: 2.2rem;
+    
+}
+
+#propos #intro a:hover {
+    top: 34rem;
+    border-color: none;
+}
+
+#propos #propos2 #image {
+    margin-top: 8rem;
+    margin-right: 10rem;
+
+}
+
+#propos #propos2 #image img {
+    border-radius: 50%;
+    border: 0.5rem solid;
+    border-color:#d77d33;
+    width: 27.5rem; 
+    height: 27.5rem;
+}
+
+#projet {
+    height: 61.5rem;
+    background-color: rgb(0, 0, 0);
+}
+
+#projet #projet2 {     
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-left: 250rem;
+    transition: all 1s ease-in-out;
+}
+
+
+#projet h2 {
+    padding: 3rem 0 3rem 90rem;
+    margin: 0;
+    font-family: 'poppins';
+    font-size: 2.4rem;
+    color: #d77d33;
+}
+
+#projet #projet2 div {
+    width: 41.1rem;
+    height: 25rem;
+    border: none;
+    border-radius: 1.8rem;
+    background-color: rgb(220, 215, 215);
+    text-align: center;
+}
+
+#projet #projet2 div:hover {
+    width: 41.6rem;
+    height: 25.5rem;
+}
+
+#projet #projet2 div p {
+    font-size: 1.6rem;
+    font-family: 'poppins';
+}
+
+#projet #projet2 div a, button {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    background-color: #d77d33;
+    transition: ease-in-out .2s;
+    font-size: 1.2rem;
+}
+
+#projet #projet2 div a:hover, button:hover {
+    padding-right: 3.6rem;
+    padding-left: 3.6rem;
+}
+
+#contact {
+    height: 65.5rem;
+    color: white;
+    background-color: black;
+    text-align: left;
+    margin-top: -3rem;
+}
+
+#contact h2 {
+
+    font-family: 'poppins';
+    font-size: 3.5rem;
+    padding-top: 2rem;
+    text-align: center;
+    height: 6rem;
+
+}
+
+#contact div {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+}
+
+#contact .formulaire {
+    margin-top: 0.5rem;
+    width: 65rem;
+    height: 50rem;
+    
+}
+
+#contact .formulaire .sujet {
+    font-family: 'poppins';
+}
+
+#contact .formulaire #input_sujet {
+    width: 64.3rem;
+    font-size: 1.6rem;
+    height: 3.3rem;
+    border: 0.1rem solid;
+    border-color: #d77d33;
+    border-radius: 0.8rem;
+    margin: 0.4rem 0 2rem 0;
+    font-family: 'poppins';
+}
+
+#contact .formulaire #message {
+    width: 99.5%;
+    padding: 0 0 26.3rem 0;
+    font-size: 1.6rem;
+    border: 0.1rem solid;
+    border-color: #d77d33;
+    border-radius: 0.8rem;
+    font-family: 'poppins';
+}
+
+
+#contact .formulaire #bouton1 {
+    width: 18.3rem;
+    margin-top: 1rem;   
+    margin-left: 23rem;
+    font-family: 'poppins';
+    font-size: 2.4rem;
+    color: white;
+    background-color: #d77d33;
+    border: 0.1rem solid;
+    border-color: #d77d33;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+}
+
+#contact .formulaire #bouton1:hover {
+    background-color: white;
+    border-color: white;
+    color: #d77d33;
+}
+
+#contact .formulaire #input_prenom {
+    font-size: 1.6rem;
+    margin: 0.6rem 0 2rem 0;
+    width: 26.9rem;
+    height: 3.3rem;
+    border: 0.1rem solid;
+    border-color: #d77d33;
+    border-radius: 0.8rem;
+    font-family: 'poppins';
+}
+
+#contact .formulaire .prenom {
+    width: 9.1rem;
+    height: 2rem;
+    font-family: 'poppins';
+}
+
+#contact .formulaire .nom {
+    position: relative;
+    top: -3.5rem;
+    left: 10rem;
+    width: 6.9rem;
+    height: 2rem;
+    font-family: 'poppins';
+}
+
+#contact .formulaire #input_nom_complet, #input_email {
+    position: relative;
+    font-size: 1.6rem;
+    left: 2.5rem;
+    margin: 0.6rem 0 2rem -2rem;
+    width: 26.9rem;
+    height: 3.3rem;
+    border: 0.1rem solid;
+    border-color: #d77d33;
+    border-radius: 0.8rem;
+    font-family: 'poppins';
+}
+
+footer {
+    height: 9rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 4rem;
+    padding-bottom: 8rem;
+
+}
+
+#competence {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'poppins';
+    height: 56.5rem;
+    background-color: rgb(220, 215, 215);
+}
+
+  #competence h2 {
+    position: absolute;
+    height: 3.6rem;
+    font-size: 2.4rem;
+    /* top: 204rem; */
+  }
+  
+  .skill-set {
+    width: 53.8rem;
+    text-align: start;
+    margin-top: 17rem;
+    height: 22.3rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+  .skill-set h3 {
+    text-align: center;
+  }
+  
+  .skill {
+    margin-bottom: 1.5rem;
+  }
+
+  #skill {
+    margin-bottom: 0.3rem;
+  }
+  
+  .skill-name {
+    font-size: 1.4rem;
+    margin-left: 5rem;
+  }
+  
+  .progress-bar {
+    width: 40.6rem;
+    height: 0.9rem;
+    background-color: rgb(220, 215, 215);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-left: 5rem;
+  }
+  
+  #progress_gestion {
+    height: 100%;
+    width: 80%;
+    background-color: #d77d33;
+    border-radius: 0.5rem;
+  }
+
+  #progress_resolution {
+    height: 100%;
+    width: 90%;
+    background-color: #a6b91a;
+    border-radius: 0.5rem;
+  }
+
+  #progress_ada {
+    height: 100%;
+    width: 95%;
+    background-color: #3999f3af;
+    border-radius: 0.5rem;
+  }
+
+  #progress_html {
+    height: 100%;
+    width: 90%;
+    background-color: #bac961;
+    border-radius: 0.5rem;
+}
+
+  #progress_css {
+    height: 100%;
+    width: 60%;
+    background-color: #b90a0a;
+    border-radius: 0.5rem;
+  }
+
+  #progress_java {
+    height: 100%;
+    width: 40%;
+    background-color: #2ac9c6;
+    border-radius: 0.5rem;
+  }
+
+  #progress_vs {
+    height: 100%;
+    width: 95%;
+    background-color: #6117b1;
+    border-radius: 0.5rem;
+  }
+
+  /* Initial state: barres à 0 */
+#progress_gestion,
+#progress_resolution,
+#progress_ada,
+#progress_html,
+#progress_css,
+#progress_java,
+#progress_vs {
+  width: 0; /* départ de 0 */
+  height: 100%;
+  /* background-color: #d77d33; */
+  border-radius: 0.5rem;
+  transition: width 1.5s ease-in-out; /* animation */
+}
+
+/* Quand la section devient visible */
+.section.visible #progress_gestion {
+  width: 80%; /* comme tu avais */
+}
+.section.visible #progress_resolution {
+  width: 90%;
+}
+.section.visible #progress_ada {
+  width: 95%;
+}
+.section.visible #progress_html {
+  width: 90%;
+}
+.section.visible #progress_css {
+  width: 60%;
+}
+.section.visible #progress_java {
+  width: 40%;
+}
+.section.visible #progress_vs {
+  width: 95%;
+}
+
+
+
+
+  #monter {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    display: none;
+    background-color: #d77d3392;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 4.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    /* border: none; */
+    border-radius: 50%;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #monter:hover {
+    background-color: #d77d33;
+    transition: .2s ease-in-out;
+  }
+
+  @media (max-width: 1300px) {
+    #accueil #intro p {
+        margin: 0;
+        font-size: 3rem;
+        width: 70.3rem;
+        height: 12rem;  
+        
+    }
+
+    #liste_tete ul li {
+        margin: 0;
+        padding: 2rem;
+    }
+
+#liste_tete ul li p {
+    font-size: 1rem;
+    color: white;
+    display: none;
+    position: absolute;
+    transform: translateY(5px);
+    transition: 0.3s ease-in-out;
+    margin: 0;
+}
+
+
+    
+    #liste_tete ul li img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #liste_tete ul li img:hover + p {
+    display: block;
+    transform: translateY(0);
+}
+
+    #propos h2 {
+        width: 11rem;
+        height: 3.765rem;
+        padding: 3rem 0 3rem 60rem;
+        margin: 0;
+        font-family: 'poppins';
+        font-size: 2.4rem;
+        color: #d77d33;
+    }
+
+    #projet h2 {
+        padding: 3rem 0 3rem 60rem;
+        font-size: 2.4rem;
+    }
+
+    #projet #projet2 div {    
+        width: 30rem;
+        height: 25rem;
+        border: none;
+        border-radius: 1.8rem;
+        background-color: rgb(220, 215, 215);
+        text-align: center;
+    }
+
+    .skill-set {
+        width: 40rem;
+        text-align: start;
+        margin-top: 17rem;
+        height: 22.3rem;
+        border-radius: 0.8rem;
+        background-color: white;
+        transition: .5s ease-in-out;
+        opacity: 0;
+    }
+
+    .progress-bar {
+        width: 30rem;
+        height: 0.9rem;
+        background-color: rgb(220, 215, 215);
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-left: 5rem;
+    }
+
+    #accueil img {
+        width: 28.7rem; 
+        height: 25.1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #accueil #intro p {
+        margin: 0;
+        font-size: 2.1rem;
+        width: 40.3rem;
+        height: 12rem;  
+        
+    }
+
+    #nom_prenom {
+        margin-left: 2rem;
+    }
+
+    #liste_tete ul li {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    #liste_tete ul li a {
+        font-size: 1.2rem;
+    }
+
+    #propos #intro p {
+        width: 50.7rem;
+        height: 5.648rem;
+        margin-left: 6.7rem;
+        font-family: 'poppins';
+        font-size: 1.2rem;
+        margin-top: -4rem;
+    }
+
+    #propos #propos2 #image img {
+        border-radius: 50%;
+        border: 0.5rem solid;
+        border-color:#d77d33;
+        width: 17.5rem; 
+        height: 17.5rem;
+    }
+
+    #propos h2 {
+        width: 11rem;
+        height: 3.765rem;
+        padding: 3rem 0 3rem 35rem;
+        margin: 0;
+        font-family: 'poppins';
+        font-size: 2.4rem;
+        color: #d77d33;
+    }
+
+    #projet h2 {
+        padding: 3rem 0 3rem 35rem;
+        font-size: 2.4rem;
+    }
+
+    #projet #projet2 div {    
+        width: 20rem;
+        height: 25rem;
+        border: none;
+        border-radius: 1.8rem;
+        background-color: rgb(220, 215, 215);
+        text-align: center;
+        
+    }
+
+    #projet #projet2 div:hover {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    
+
+    .skill-set {
+        width: 40rem;
+        text-align: start;
+        margin-top: 17rem;
+        height: 22.3rem;
+        border-radius: 0.8rem;
+        background-color: white;
+        transition: .5s ease-in-out;
+        opacity: 0;
+    }
+
+    .progress-bar {
+        width: 30rem;
+        height: 0.9rem;
+        background-color: rgb(220, 215, 215);
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-left: 5rem;
+    }
+
+    #accueil img {
+        width: 28.7rem; 
+        height: 25.1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    #accueil #intro p {
+        margin: 0 0 0 5rem;
+        font-size: 2rem;
+        width: 25rem;
+        height: 12rem; 
+        
+    }
+
+    #accueil img {
+        display: none;
+    }
+
+    #nom_prenom {
+        margin-left: 2rem;
+        
+    }
+
+    #nom_prenom h2 {
+        font-size: 1.5rem;
+    }
+
+    #liste_tete ul li {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    #liste_tete ul li a {
+        font-size: 0.6rem;
+    }
+
+    #propos #intro p {
+        width: 40rem;
+        height: 5.648rem;
+        margin-left: 8rem;
+        font-family: 'poppins';
+        font-size: 1.2rem;
+        margin-top: -4rem;
+        text-align: center;
+    }
+
+    #propos #propos2 #image img {
+        border-radius: 50%;
+        border: 0.5rem solid;
+        border-color:#d77d33;
+        width: 17.5rem; 
+        height: 17.5rem;
+        display: none;
+    }
+
+    #propos h2 {
+        width: 11rem;
+        height: 3.765rem;
+        padding: 3rem 0 3rem 20rem;
+        margin: 0;
+        font-family: 'poppins';
+        font-size: 2.4rem;
+        color: #d77d33;
+    }
+
+    #projet h2 {
+        padding: 3rem 0 3rem 20rem;
+        font-size: 2.4rem;
+    }
+
+    #projet #projet2 div {    
+        width: 15rem;
+        height: 25rem;
+        border: none;
+        border-radius: 1.8rem;
+        background-color: rgb(220, 215, 215);
+        text-align: center;
+        
+    }
+
+    #projet #projet2 div:hover {
+        width: 15rem;
+        height: 25rem;
+    }
+
+    #projet #projet2 div a, button {
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 0.8rem;
+        color: white;
+        background-color: #d77d33;
+        transition: ease-in-out .2s;
+        font-size: 0.5rem;
+    }
+
+    #projet #projet2 div a, button:hover {
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        border: none;
+        border-radius: 0.8rem;
+        color: white;
+        background-color: #d77d33;
+        transition: ease-in-out .2s;
+        font-size: 0.5rem;
+    }
+
+    
+
+    .skill-set {
+        width: 40rem;
+        text-align: start;
+        margin-top: 17rem;
+        height: 22.3rem;
+        border-radius: 0.8rem;
+        background-color: white;
+        transition: .5s ease-in-out;
+        opacity: 0;
+    }
+
+    .progress-bar {
+        width: 30rem;
+        height: 0.9rem;
+        background-color: rgb(220, 215, 215);
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-left: 5rem;
+    }
+
+    #accueil img {
+        width: 28.7rem; 
+        height: 25.1rem;
+    }
+
+    .skill-set {
+        width: 20rem;
+        text-align: start;
+        margin-top: 17rem;
+        height: 22.3rem;
+        border-radius: 0.8rem;
+        background-color: white;
+        transition: .5s ease-in-out;
+        opacity: 0;
+    }
+
+    .progress-bar {
+        width: 18rem;
+        height: 0.9rem;
+        background-color: rgb(220, 215, 215);
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-left: 1rem;
+    }
+
+    #contact {
+        height: 65.5rem;
+        color: white;
+        background-color: black;
+        text-align: left;
+        margin-top: -3rem;
+    }
+    
+    #contact h2 {
+    
+        font-family: 'poppins';
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        text-align: center;
+        height: 6rem;
+    
+    }
+    
+    #contact div {
+        display: flex;
+        justify-content: center;
+        height: 30rem;
+    }
+    
+    #contact .formulaire {
+        margin-top: 0.5rem;
+        width: 45rem;
+        height: 35rem;
+        
+    }
+    
+    #contact .formulaire .sujet {
+        font-family: 'poppins';
+    }
+    
+    #contact .formulaire #input_sujet {
+        width: 40.3rem;
+        font-size: 1.6rem;
+        height: 3.3rem;
+        border: 0.1rem solid;
+        border-color: #d77d33;
+        border-radius: 0.8rem;
+        margin: 0.4rem 0 2rem 0;
+        font-family: 'poppins';
+    }
+    
+    #contact .formulaire #message {
+        width: 99.5%;
+        padding: 0 0 26.3rem 0;
+        font-size: 1.6rem;
+        border: 0.1rem solid;
+        border-color: #d77d33;
+        border-radius: 0.8rem;
+        font-family: 'poppins';
+        height: 1rem;
+    }
+    
+    
+    #contact .formulaire #bouton1 {
+        width: 18.3rem;
+        margin-top: 1rem;   
+        margin-left: 15rem;
+        font-family: 'poppins';
+        font-size: 1.5rem;
+        color: white;
+        background-color: #d77d33;
+        border: 0.1rem solid;
+        border-color: #d77d33;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+    }
+    
+    #contact .formulaire #bouton1:hover {
+        background-color: white;
+        border-color: white;
+        color: #d77d33;
+    }
+    
+    #contact .formulaire #input_email {
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2rem 0;
+        width: 26.9rem;
+        height: 3.3rem;
+        border: 0.1rem solid;
+        border-color: #d77d33;
+        border-radius: 0.8rem;
+        font-family: 'poppins';
+    }
+    
+    #contact .formulaire .prenom {
+        width: 9.1rem;
+        height: 2rem;
+        font-family: 'poppins';
+    }
+    
+    #contact .formulaire .nom {
+        position: relative;
+        top: 3.5rem;
+        left: -27rem;
+        width: 6.9rem;
+        height: 2rem;
+        font-family: 'poppins';
+    }
+    
+    #contact .formulaire #input_email {
+        position: relative;
+        font-size: 1.6rem;
+        left: 2.5rem;
+        margin: 0.6rem 0 2rem -2rem;
+        width: 26.9rem;
+        height: 3.3rem;
+        border: 0.1rem solid;
+        border-color: #d77d33;
+        border-radius: 0.8rem;
+        font-family: 'poppins';
+    }
+
+    
+}
+
+
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styles spécifiques */
+#accueil.section { transform: translateY(60px); }
+#propos.section  { transform: translateX(-60px); }
+#contact.section { transform: scale(0.8); }
+
+/* Quand visibles */
+#accueil.visible { transform: translateY(0); }
+#propos.visible  { transform: translateX(0); }
+#contact.visible { transform: scale(1); }
+
+/* ====== Effet Hover ====== */
+.section:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(215,125,51,0.4);
+}
+
+
+.tech-logo {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+}

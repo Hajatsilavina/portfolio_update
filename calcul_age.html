@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détermination de l'âge</title>
+
+    <!-- Police Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Général */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Conteneur */
+        .container {
+            background: rgb(220, 215, 215);
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            border: 1px solid #d77d33;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 14px;
+            font-family: 'Poppins';
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            background-color: #d77d33;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.03);
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 8px 0;
+        }
+
+        a {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #d77d33;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        a:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <label>Insérer votre date d'anniversaire</label>
+        <input type="date" id="date">
+
+        <button onclick="affichage()">Calculer</button>
+
+        <p id="jour"></p>
+        <p id="mois"></p>
+        <p id="annee"></p>
+        <p id="diff"></p>
+
+        <a href="./index.html">Revenir</a>
+    </div>
+
+</body>
+
+<script src="./calcul_age.js"></script>
+</html>

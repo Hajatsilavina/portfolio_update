@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>PROJET FINAL</title>
+</head>
+<body style="width: 100%; max-width: 100%; overflow-x: hidden;">
+    <header>
+        <div id="nom_prenom">
+            <h2 class="nom_prenom">HARINJATO <span class="tsila">Haja Tsilavina</span></h2>
+        </div>
+        <div id="liste_tete">
+            <ul>
+                <li>
+                    <a style="color: #d77d33;" href="#" class="all1">
+                        <img src="./accueil.png">
+                        <p>Accueil</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#propos" style="behavior: 'smooth';">
+                        <img src="./propos.png">
+                        <p>A propos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projet">
+                        <img src="./projet.png">
+                        <p>Projets</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#competence">
+                        <img src="./skills.png">
+                        <p>Compétences</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <img src="./contact.png">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="accueil" class="section">
+        <div id="intro">
+            <p>Je suis <span class="tsila">Haja Tsilavina</span>,un jeune diplômé en droit en pleine reconversion<br>dans le développement web et tous les domaines connexes.</p>
+            <button class="all">Voir mes projets</button>
+        </div>
+        <div id="image">
+            <img src="./haja.png">
+        </div>
+    </div>
+    <div id="propos" class="section">
+        <h2 class="all1">À propos</h2>
+        <div id="propos2">
+            <div id="intro">
+                <p>Je m'appelle <span class="tsila">HARINJATO</span>, passionné et déterminé <br>à explorer les multiples facettes de l'univers numérique,<br> qu'il s'agisse de création de site web ou d'autres technologies innovantes. <br> <br> Mon parcours atypique témoigne de ma capacité d'adaptation, <br> et de mon intérêt pour l'apprentissage continu afin de développer  <br>des compétences solides et de transformer mes idées en des projets concrets. <br> <br> Je m'investis dans la maitrîse des outils et des technologies du web<br>pour concevoir des projets innovants et stratégiques en alliant originalité <br>et performance.</p>
+                <a href="https://drive.google.com/file/d/1G0gi0eyq8ANT-l9PSi45gSetrFBWGiBL/view?usp=drive_link" id="cv"  class="all">Télécharger mon CV</a> 
+                
+            </div>
+            <div id="image">
+                <img class="all2" src="./TITI.jpeg">
+            </div>
+        </div>
+    </div>
+    <div id="projet" class="section">
+        <h2 class="all1">Mes projets</h2>
+        <div id="projet2">
+            <div>
+                <p>Calculateur de prêt hypothécaire <br><br><br><br> #html, #css, #js</p>
+                <a href="./Exercice6.html" class="all">Voir</a>
+            </div>
+            <div>
+                <p>Détermination de l'âge<br><br><br><br> #html, #css, #js</p>
+                <a href="./calcul_age.html" class="all">Voir</a>
+            </div>
+            <div>
+                <p>Changement de thème<br><br><br><br> #html, #css, #js</p>
+                <button id="vert" onclick="vert()" class="all">Vert</button>
+                <button id="rouge" onclick="rouge()" class="all">Rouge</button>
+                <button id="bleu" onclick="bleu()" class="all">Bleu</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="competence" class="section">
+        <h2>Mes compétences</h2>
+        <div  id="skill-set1" class="skill-set">
+            <h3>Soft Skills</h3>
+            <div class="skill">
+                <span1 class="skill-name">Gestion de projet</span1>
+                <div class="progress-bar">
+                    <div class="progress"  id="progress_gestion"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span1 class="skill-name">Résolution de problème</span1>
+                <div class="progress-bar">
+                    <div   class="progress" id="progress_resolution"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span1 class="skill-name">Adaptabilité</span1>
+                <div class="progress-bar">
+                    <div  class="progress" id="progress_ada"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skill-set2" class="skill-set">
+            <h3>Hard Skills</h3>
+            <div class="skill" id="skill">
+                <span1 class="skill-name">HTML</span1>
+                <div class="progress-bar">
+                    <div class="progress"  id="progress_html"></div>
+                </div>
+            </div>
+            <div class="skill"  id="skill">
+                <span1 class="skill-name">CSS</span1>
+                <div class="progress-bar">
+                    <div  class="progress" id="progress_css"></div>
+                </div>
+            </div>
+            <div class="skill" id="skill">
+                <span1 class="skill-name">JavaScript</span1>
+                <div class="progress-bar">
+                    <div class="progress"  id="progress_java"></div>
+                </div>
+            </div>
+            <div class="skill" id="skill">
+                <span1 class="skill-name">VS Code</span1>
+                <div class="progress-bar">
+                    <div class="progress" id="progress_vs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="section">
+        <h2>Vous avez un <span class="tsila">projet en tête ? </span><br> N'hésiter pas à me <span class="tsila">contacter</span></h2>
+        <div>
+    
+            <form class="formulaire" id="contactForm" action="https://formspree.io/f/mzzybvnj" method="POST">
+    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
+    <input type="hidden" name="_replyto" value="hajatsilavinaharinjato@gmail.com">
+    <input type="text" name="_gotcha" style="display:none">
+    
+    <label class="prenom">Nom complet</label> <br>
+    <input class="all2" id="input_nom_complet" type="text" name="name" placeholder="John" required> 
+    <label class="nom">Email</label> 
+    <input class="all2" id="input_email" name="email" type="email" placeholder="basta@gmail.com" required>
+
+    <br>
+    <label class="sujet">Votre sujet</label>
+    <input class="all2" id="input_sujet" name="subject" type="text" placeholder="Développement d'un site vitrine" required> <br>
+    <textarea class="all2" id="message" name="message" placeholder="Ecrivez votre message ici !" required></textarea> <br>
+    <button type="submit" id="bouton1" class="all">Envoyer</button>
+</form>
+        </div>
+    </div>
+    <!-- <button class="all" id="monter">^</button> -->
+    <img src="./monter1.png" class="all" id="monter">
+    <footer>
+         <p>Designed by <span class="tsila">Haja Tsilavina</span> with 
+    <img src="./html.png" alt="HTML" class="tech-logo">
+    <img src="./css.png" alt="CSS" class="tech-logo">  
+    <img src="./js.png" alt="JavaScript" class="tech-logo">
+</p>
+         <p>Tous droits réservés - 2024</p>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>

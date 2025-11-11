@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!-- Indique qu’il s’agit d’un document HTML5 -->
+<html lang="fr"> <!-- Le document est en langue française -->
+<head> <!-- En-tête du document, contient les métadonnées -->
+  <meta charset="utf-8"> <!-- Encodage UTF-8 pour les caractères spéciaux -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Rend la page lisible sur mobile -->
+  <title>Calculateur de prêt hypothécaire</title> <!-- Titre affiché dans l’onglet du navigateur -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgb(220, 215, 215);
+      padding: 30px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d77d33;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input {
+      width: 100%;
+      height: 35px;
+      border: 1px solid #d77d33;
+      border-radius: 8px;
+      padding: 5px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      background-color: #d77d33;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+    }
+
+    #result {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      background: #d77d33;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    a:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body> <!-- Début du corps visible de la page -->
+
+  <div class="container">
+    <h1>Calculateur de prêt</h1>
+
+    <form id="mortgageForm">
+      <label for="amount">Montant du prêt ($)</label>
+      <input type="number" id="amount" min="0" step="0.01" required>
+
+      <label for="annualRate">Taux d'intérêt annuel (%)</label>
+      <input type="number" id="annualRate" min="0" step="0.01" required>
+
+      <label for="years">Durée (années)</label>
+      <input type="number" id="years" min="1" step="1" required>
+
+      <button type="submit">Calculer</button>
+    </form>
+
+    <p id="result">Paiement mensuel: —</p>
+
+    <a href="./index.html">Revenir</a>
+  </div>
+  <script> <!-- Début du script JavaScript -->
+    const form = document.getElementById('mortgageForm'); // Récupère le formulaire dans la page
+    const resultP = document.getElementById('result'); // Récupère le paragraphe où afficher le résultat
+
+    form.addEventListener('submit', function(event) { // Écoute l'événement de soumission du formulaire
+      event.preventDefault(); // Empêche le rechargement de la page lors de la soumission
+
+      const P = parseFloat(document.getElementById('amount').value); // Récupère et convertit le montant du prêt
+      const annualRate = parseFloat(document.getElementById('annualRate').value); // Récupère et convertit le taux annuel
+      const years = parseInt(document.getElementById('years').value, 10); // Récupère et convertit la durée en années
+
+      if (isNaN(P) || P <= 0) { // Vérifie que le montant est valide
+        alert('Veuillez saisir un montant de prêt positif.'); // Message d’erreur si invalide
+        return; // Stoppe l’exécution
+      }
+      if (isNaN(annualRate) || annualRate < 0) { // Vérifie que le taux est valide
+        alert("Veuillez saisir un taux d'intérêt valide (>= 0)."); // Message d’erreur si invalide
+        return; // Stoppe l’exécution
+      }
+      if (isNaN(years) || years <= 0) { // Vérifie que la durée est valide
+        alert('Veuillez saisir une durée en années valide (>= 1).'); // Message d’erreur si invalide
+        return; // Stoppe l’exécution
+      }
+
+      const n = years * 12; // Calcule le nombre total de paiements (en mois)
+      const r = annualRate / 100 / 12; // Convertit le taux annuel en taux mensuel décimal
+
+      let M; // Déclare la variable du paiement mensuel
+      if (r === 0) { // Cas particulier : taux d’intérêt nul
+        M = P / n; // Si taux = 0, paiement = montant / nombre de mois
+      } else {
+        M = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1); // Application de la formule d’amortissement
+      }
+// M = P * (r * (1 + r)^n) / ((1 + r)^n - 1)
+      M = Math.round(M * 100) / 100; // Arrondit à deux décimales
+      resultP.textContent = `Paiement mensuel:$  ${M.toFixed(2)}`; // Affiche le résultat formaté dans la page
+    }); // Fin de l’écouteur d’événement
+  </script> <!-- Fin du script JavaScript -->
+</body> <!-- Fin du corps du document -->
+
+</html> <!-- Fin du document HTML -->
+
+

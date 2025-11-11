@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de prêt hypotécaire</title>
+</head>
+<body style="font-size: 30px;">
+    <h1>Calculateur de prêt hypothécaire</h1>
+        <label>Montant du prêt: </label>
+        <input id="montant" type="number"> <br>
+        <label>taux d'intérêt annuel: </label>
+        <input id="taux" type="number"> <br>
+        <label>Durée(en année): </label>
+        <input  id="duree" type="number"> <br>
+        <button onclick="bouton()">Valider</button>
+        <p id="resultat"></p>
+         <br> <br> 
+         <a href="./index.html">Revenir</a>
+</body>
+<style>
+    a {
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        color: black;
+        background-color: #d77d33;
+        border-color: #d77d33;
+    }
+</style>
+<script src="./calculateur.js"></script>
+</html>
